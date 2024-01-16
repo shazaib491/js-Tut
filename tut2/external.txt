@@ -1,0 +1,2 @@
+Using external JavaScript files refers to the practice of storing JavaScript code in separate files with a .js extension and
+then including these files in HTML documents. This approach helps keep web development projects organized, promotes code reusability, and separates the structure (HTML), presentation (CSS), and behavior (JavaScript) of a web page.

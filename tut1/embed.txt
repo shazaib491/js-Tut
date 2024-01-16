@@ -1,0 +1,10 @@
+
+Embedding JavaScript in HTML using the <script> tag is a common practice to add interactivity and functionality to web pages. Here's how you can do it along with a definition:
+
+Definition:
+Embedding JavaScript in HTML refers to the process of including JavaScript code within an HTML document to enable dynamic behavior and interactivity on a web page. This allows developers to control the behavior of web elements, respond to user interactions, and manipulate the content of the page.
+
+How to Embed JavaScript in HTML:
+To embed JavaScript in HTML, you can use the <script> tag. Here are the steps:
+
+Opening <script> Tag: Start by opening the <script> tag within the <head> or <body> section of your HTML document. You can also place it just before the closing </body> tag for performance optimization.
