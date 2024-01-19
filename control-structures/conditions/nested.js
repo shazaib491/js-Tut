@@ -3,8 +3,10 @@
 if (isLoggedIn) {
     if (userRole === 'admin') {
         console.log("Access to all systems.");
-    } else {
-        console.log("Limited access.");
+    } 
+    
+    if(userRole === 'user'){
+        console.log("Limited Access")
     }
 }
 
