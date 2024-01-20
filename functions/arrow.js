@@ -1,4 +1,4 @@
-// expression function 
+// arrow function 
 let print=(nm)=>console.warn("Printing",nm);
 
 

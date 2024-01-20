@@ -1,4 +1,4 @@
-// expression function 
+//  function expression
 let print=function(nm){
     console.warn("Printing",nm);
 }

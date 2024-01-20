@@ -1,0 +1,1 @@
+DOM ka full form hai "Document Object Model". Ye ek web development ka concept hai jo webpage ko ek structured form mein represent karta hai, jisse ki programming languages jaise JavaScript us page ke content, structure, aur style ko interactively badal sakte hain.
