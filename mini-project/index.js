@@ -1,6 +1,7 @@
 // DOM element references
 const title = document.querySelector("#title");
 const body = document.querySelector("#body");
+
 const display = document.querySelector("#display");
 
 // Initial blog data
