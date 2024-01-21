@@ -1,5 +1,5 @@
 let displayTable = document.querySelector("#displayTable");
-
+console.log(displayTable)
 let blogTable = [
   {
     id: 1,
@@ -15,11 +15,11 @@ let blogTable = [
 
 
 function show(){
-    blogTable.forEach((post)=>{
-        displayTable.innerHTML+=`
+    blogTable.forEach((slamankhan)=>{
+        displayTable.innerText+=`
             <tr>
-                <td>${post.title}</td>
-                <td>${post.body}</td>
+                <td>${slamankhan.title}</td>
+                <td>${slamankhan.body}</td>
             </tr>
         `
         })
@@ -27,3 +27,12 @@ function show(){
 
 show();
 
+
+
+console.log([1,2,3,45].reduce(bigShow,4))
+
+
+//callback
+function bigShow(totalValue,currentValue){
+return totalValue + currentValue
+}
