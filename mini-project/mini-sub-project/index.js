@@ -1,4 +1,8 @@
 let displayTable = document.querySelector("#displayTable");
+let titleInput=document.querySelector("#title")
+let bodyInput=document.querySelector("#body")
+
+
 console.log(displayTable)
 let blogTable = [
   {
@@ -15,24 +19,38 @@ let blogTable = [
 
 
 function show(){
-    blogTable.forEach((slamankhan)=>{
-        displayTable.innerText+=`
+  displayTable.innerHTML="";
+    blogTable.forEach((element)=>{
+        displayTable.innerHTML+=`
             <tr>
-                <td>${slamankhan.title}</td>
-                <td>${slamankhan.body}</td>
+                <td>${element.id}</td>
+                <td>${element.title}</td>
+                <td>${element.body}</td>
             </tr>
         `
         })
+}
+
+
+function onSave(event){
+  event.preventDefault();
+  let blogsInput={
+    id:blogTable.length+1,
+    title:titleInput.value,
+    body:bodyInput.value
+  }
+  console.log(blogsInput);
+  blogTable.push(blogsInput);
+  console.log(blogTable)
+  show();
+  titleInput.value="";
+  bodyInput.value="";
 }
 
 show();
 
 
 
-console.log([1,2,3,45].reduce(bigShow,4))
 
 
-//callback
-function bigShow(totalValue,currentValue){
-return totalValue + currentValue
-}
+
