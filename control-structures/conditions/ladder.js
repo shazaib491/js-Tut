@@ -57,3 +57,175 @@ if (score < 50) {
 } else {
     console.log("Excellent");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // // console.log(a);
+// // // var a = 10;
+
+// // // //block scope is ke ander jo bhi likha jata he wo bhar access nhi ho skta
+// // // {
+// // //   var sum = 1 + 2;
+// // // }
+
+// // // console.log(sum);
+
+// // // for (var i = 0; i < 10; i++) {
+// // //   console.log(i);
+// // // }
+
+// // // console.log(i);
+
+// // // //redeclare
+// // // var username = "admin";
+
+// // // var username = "username";
+
+// // // console.log(username);
+
+// // // var password = "password";
+
+// // // password = "admin";
+
+// // // console.log(password);
+
+// // // temporal dead zone
+// // let a=10;
+// // // console.log(a);
+
+// // // {
+// // //     let j=100;
+// // // }
+
+// // // console.log(j)
+// // // console.log(i)
+
+// // for(let i=0; i<10; i++){
+// //     console.log(i)
+// // }
+
+// // let a=100;
+
+// // let number=10;
+
+// // number=200;
+
+// // console.log(number)
+
+// // const a=10;
+
+// // {
+// //     const number=200;
+// // }
+
+// // console.log(number);
+
+// // for(const i=0; i<10; i++){
+// //     console.log(i);
+// // }
+
+// // const open="windows";
+// // open="admin"
+// // console.log(open);
+
+// let temprature=23;
+// if(temprature > 25)
+// {
+//     console.log("condiiton is true")
+// }else{
+//     console.log("Condiiton is false")
+// }
+
+// isLoggedIn = false;
+// userRole = "user";
+// department = "user";
+
+// if (isLoggedIn) {
+//   if (userRole === "admin") {
+//     if (department === "administ") {
+//       console.log("Access to all systems.");
+//     } else {
+//       console.log("Yopu dont have access");
+//     }
+//   } else {
+//     console.log("only admin is allowed");
+//   }
+// } else {
+//   console.log("wrong credentials");
+// }
+
+// marks=40;
+
+// if (marks >= 90) {
+//     console.log("Grade A");
+// } else if (marks >= 80) {
+//     console.log("Grade B");
+// } else if (marks >= 70) {
+//     console.log("Grade C");
+// } else {
+//     console.log("Try harder next time.");
+// }
+
+// console.log(new Date());
+let days = new Date().getDay()+1;
+
+switch (days) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  default:
+    console.log("So jao sunday he");
+}
+
+
+// let day = "Tuesday";
+
+// switch (day) {
+//     case "Monday":
+//         console.log("It's Monday, the start of the week.");
+//         break;
+//     case "Tuesday":
+//         console.log("It's Tuesday, second day of the week.");
+//         break;
+//     case "Wednesday":
+//         console.log("It's Wednesday, middle of the week.");
+//         break;
+//     case "Thursday":
+//         console.log("It's Thursday, almost the weekend.");
+//         break;
+//     case "Friday":
+//         console.log("It's Friday, weekend starts tomorrow!");
+//         break;
+//     case "Saturday":
+//     case "Sunday":
+//         console.log("It's the weekend, time to relax!");
+//         break;
+//     default:
+//         console.log("That's not a valid day!");
+// }
+
+
+
