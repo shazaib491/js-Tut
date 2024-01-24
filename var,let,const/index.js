@@ -1,9 +1,52 @@
-console.log(a);
+
+console.log(admin);
 
 // // console.log(a)
-const  a=10;
+const  admin=10;
 
 
+{
+    const scope=10;
+}
+
+
+console.log(scope);
+
+
+for(const i=0; i<10; i++){
+    console.log(i);
+}
+
+console.log(i);
+
+var username="arman";
+var username="usad";
+
+
+var password="password"
+
+password="console"
+
+
+//temporal dead zone
+console.log(a);
+let a=10;
+
+{
+    let open="close";
+}
+
+console.log(open);
+
+for(let i=0; i<10; i++){
+    console.log(i);
+}
+
+console.log(i);
+
+
+let hello="word"
+hello="hello"
 
 
 

@@ -22,7 +22,7 @@ function show(){
   displayTable.innerHTML="";
     blogTable.forEach((element)=>{
         displayTable.innerHTML+=`
-            <tr>
+            <tr> 
                 <td>${element.id}</td>
                 <td>${element.title}</td>
                 <td>${element.body}</td>
@@ -39,12 +39,11 @@ function onSave(event){
     title:titleInput.value,
     body:bodyInput.value
   }
-  console.log(blogsInput);
   blogTable.push(blogsInput);
-  console.log(blogTable)
   show();
   titleInput.value="";
   bodyInput.value="";
+  event.target.reset();
 }
 
 show();

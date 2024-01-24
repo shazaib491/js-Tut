@@ -1,75 +1,62 @@
 // else if Ladder: This structure is a series of if statements, where each if statement has an else if clause. It's used to differentiate between multiple conditions.
+// marks=100;
+// if (marks >= 90) {
+//     console.log("Grade A");
+// } else if (marks >= 80) {
+//     console.log("Grade B");
+// } else if (marks >= 70) {
+//     console.log("Grade C");
+// } else if (marks >= 60) {
+//     console.log("Grade D");
+// } else {
+//     console.log("Grade F");
+// }
 
-if (marks >= 90) {
-    console.log("Grade A");
-} else if (marks >= 80) {
-    console.log("Grade B");
-} else if (marks >= 70) {
-    console.log("Grade C");
-} else if (marks >= 60) {
-    console.log("Grade D");
-} else {
-    console.log("Grade F");
-}
+// if (temperature > 35) {
+//     console.log("Extremely hot");
+// } else if (temperature > 30) {
+//     console.log("Very hot");
+// } else if (temperature > 25) {
+//     console.log("Moderately hot");
+// } else if (temperature > 20) {
+//     console.log("Warm");
+// } else {
+//     console.log("Cool");
+// }
 
-if (temperature > 35) {
-    console.log("Extremely hot");
-} else if (temperature > 30) {
-    console.log("Very hot");
-} else if (temperature > 25) {
-    console.log("Moderately hot");
-} else if (temperature > 20) {
-    console.log("Warm");
-} else {
-    console.log("Cool");
-}
+// if (day === "Monday") {
+//     console.log("Start of the work week.");
+// } else if (day === "Wednesday") {
+//     console.log("Midweek.");
+// } else if (day === "Friday") {
+//     console.log("End of the work week.");
+// } else if (day === "Saturday" || day === "Sunday") {
+//     console.log("Weekend!");
+// } else {
+//     console.log("Regular workday.");
+// }
 
-if (day === "Monday") {
-    console.log("Start of the work week.");
-} else if (day === "Wednesday") {
-    console.log("Midweek.");
-} else if (day === "Friday") {
-    console.log("End of the work week.");
-} else if (day === "Saturday" || day === "Sunday") {
-    console.log("Weekend!");
-} else {
-    console.log("Regular workday.");
-}
+// if (animal === 'Dog') {
+//     console.log("Pet: Dog");
+// } else if (animal === 'Cat') {
+//     console.log("Pet: Cat");
+// } else if (animal === 'Bird') {
+//     console.log("Pet: Bird");
+// } else {
+//     console.log("Unknown pet");
+// }
 
-if (animal === 'Dog') {
-    console.log("Pet: Dog");
-} else if (animal === 'Cat') {
-    console.log("Pet: Cat");
-} else if (animal === 'Bird') {
-    console.log("Pet: Bird");
-} else {
-    console.log("Unknown pet");
-}
-
-if (score < 50) {
-    console.log("Fail");
-} else if (score < 65) {
-    console.log("Pass");
-} else if (score < 75) {
-    console.log("Good");
-} else if (score < 90) {
-    console.log("Very Good");
-} else {
-    console.log("Excellent");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+// if (score < 50) {
+//     console.log("Fail");
+// } else if (score < 65) {
+//     console.log("Pass");
+// } else if (score < 75) {
+//     console.log("Good");
+// } else if (score < 90) {
+//     console.log("Very Good");
+// } else {
+//     console.log("Excellent");
+// }
 
 // // // console.log(a);
 // // // var a = 10;
@@ -144,12 +131,12 @@ if (score < 50) {
 // {
 //     console.log("condiiton is true")
 // }else{
-//     console.log("Condiiton is false")
+//     console.log("condiiton is false")
 // }
 
-// isLoggedIn = false;
-// userRole = "user";
-// department = "user";
+// isLoggedIn = true;
+// userRole = "admin";
+// department = "administ";
 
 // if (isLoggedIn) {
 //   if (userRole === "admin") {
@@ -178,28 +165,27 @@ if (score < 50) {
 // }
 
 // console.log(new Date());
-let days = new Date().getDay()+1;
+// let days = new Date().getDay()+1;
 
-switch (days) {
-  case 1:
-    console.log("Monday");
-    break;
-  case 2:
-    console.log("Tuesday");
-    break;
-  case 3:
-    console.log("Wednesday");
-    break;
-  case 4:
-    console.log("Thursday");
-    break;
-  case 5:
-    console.log("Friday");
-    break;
-  default:
-    console.log("So jao sunday he");
-}
-
+// switch (days) {
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   case 4:
+//     console.log("Thursday");
+//     break;
+//   case 5:
+//     console.log("Friday");
+//     break;
+//   default:
+//     console.log("So jao sunday he");
+// }
 
 // let day = "Tuesday";
 
@@ -227,5 +213,83 @@ switch (days) {
 //         console.log("That's not a valid day!");
 // }
 
+let obj = {
+  name: "admin",
+  email: "AdmiN@gmail.com",
+  password: "admin@123",
+};
+
+let { email } = obj;
+
+// console.log(email);
+
+let arr = [1, 2, 3, 4, 5];
+let [zeroElement, secondElement, thirdElement, , fifth] = arr;
+// console.log(zeroElement, secondElement, thirdElement, fifth);
+
+// let username=obj['name'];
+// console.log(obj)
+
+// let str = "p";
+
+// if (str == "a" || str == "e" || str == "i" || str == "o" || str == "u") {
+//   console.log("vowel");
+// } else {
+//   console.log("consonant");
+// }
+
+// do while loop ek bar to chalega hi chalega
+// while loop jab hamko nhi maloom ho final step kaha band hogi ye wha pr chalega
+// for loop initial or final value wha pr ham for loop
+
+//wap to print 5 times hello world on the screen
+// expected output:
+// hello world
+// hello world
+// hello world
+// hello world
+// hello world
+
+// let cnt = 6;
+
+// do {
+//   console.log("hello world");
+//   cnt++;
+// } while (cnt <= 5);
+
+// using while loop
+// let counter = 1;
+// while (counter<=5) {
+//     if(counter==2){
+//         counter++;
+//         continue;
+//     }
+//   console.log("hello world");
+//   counter++;
+// }
 
 
+
+// for (let counter = 1; counter <= 5; counter++) {
+//     if (counter == 2) {
+//         continue;
+//     }
+//     console.log("hello world");
+// }
+
+
+// * * * * 
+// * * * * 
+// * * * * 
+// * * * * 
+
+let rows=4;
+let columns=4;
+
+for(let i=0;i<=rows;i++) {
+    let row="";
+    for(let j=0; j<=i;j++) {
+        row+="* ";
+    }
+    console.log(row);
+}
