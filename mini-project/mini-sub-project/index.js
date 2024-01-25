@@ -26,6 +26,9 @@ function show(){
                 <td>${element.id}</td>
                 <td>${element.title}</td>
                 <td>${element.body}</td>
+                <td>
+                <button  class="btn btn-sm btn-danger"  onclick="deleteBlog(${element.id})" >Delete</button>
+                </td>
             </tr>
         `
         })
@@ -50,6 +53,11 @@ show();
 
 
 
-
+// method for deleting a blog
+function deleteBlog(id) {
+  blogTable=blogTable.filter((blog)=>blog.id!==id);
+  console.log(blogTable)
+  show()
+}
 
 

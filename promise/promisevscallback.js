@@ -1,3 +1,9 @@
+/**
+ * 
+ * Callbacks: Require you to write and pass custom functions for both success and error handling.
+Promises: Use a built-in mechanism (resolve and reject) for success and error handling. You attach your own handlers (functions) to these outcomes using .then() and .catch().
+ */
+
 function fetchDataFromSource1(callback) {
     // Simulating a data fetch
     setTimeout(() => {
@@ -59,3 +65,46 @@ fetchDataFromSource1()
     .catch(error => {
         console.error(error);
     });
+
+
+    //promise hell
+    function prepareStarter() {
+        return new Promise((resolve) => {
+            console.log("Preparing the starter...");
+            setTimeout(() => {
+                console.log("Starter is ready!");
+                resolve();
+            }, 1000);
+        });
+    }
+    
+    function prepareMainCourse() {
+        return new Promise((resolve) => {
+            console.log("Preparing the main course...");
+            setTimeout(() => {
+                console.log("Main course is ready!");
+                resolve();
+            }, 1000);
+        });
+    }
+    
+    function prepareDessert() {
+        return new Promise((resolve) => {
+            console.log("Preparing the dessert...");
+            setTimeout(() => {
+                console.log("Dessert is ready!");
+                resolve();
+            }, 1000);
+        });
+    }
+    
+    prepareStarter()
+        .then(() => prepareMainCourse())
+        .then(() => prepareDessert())
+        .then(() => {
+            console.log("All courses are ready!");
+        })
+        .catch((error) => {
+            console.error("An error occurred:", error);
+        });
+    
