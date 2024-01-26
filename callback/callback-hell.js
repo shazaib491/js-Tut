@@ -22,20 +22,14 @@ function prepareDessert(callback) {
     }, 5000);
 }
 
-// prepareStarter(() => {
-//     prepareMainCourse(() => {
-//         prepareDessert(() => {
-//             console.log("All courses are ready!");
-//         });
-//     });
-// });
-
-prepareStarter(()=>{
-    prepareMainCourse(()=>{
-        prepareDessert(()=>{
+prepareStarter(() => {
+    prepareMainCourse(() => {
+        prepareDessert(() => {
             console.log("All courses are ready!");
-        })
-    })
-})
+        });
+    });
+});
+
+
 
 // [1,2,3,4,5].forEach(()=>{})

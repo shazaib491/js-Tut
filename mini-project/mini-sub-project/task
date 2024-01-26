@@ -1,0 +1,42 @@
+read operation complete
+
+1.)to show the element in the table 
+2.)table ki id ham dusplaytable name se select kr rhe the
+3.)show functio bnaya 
+4.)ineerhtml previous table empty kr diya 
+5.)foreach se element print kraye dom me 
+6.)show function call kiya
+
+
+task 2
+submit krane operation kraya tha 
+1.)hmare pass form hona chahiye
+2.)us form ke ander two field set ki thi title body
+3.)onSubmit trigger
+4.)onSave trigger hua onsubmit event pr 
+5.)evennt prevantDEfautl 
+6.)object banaya blogInput name s e
+7.)blogTable record push kraya tha
+
+
+
+task 3
+delete records
+1.) innerhtml pr jaha data shw kra rhe he wha pr dynamically hmne ek element ko add kiya tha
+2.)deleteBlog functionc call kra tha button click pr usme hmne hmare array ki current id pass ki he 
+3.)id recieve krega deleteBlog function 
+4.)blogTable array ko filter kraya id ke behalf pr
+5.)show function double call kraya taqe latest record ham sync kr paye 
+
+
+task 4
+1.) innerhtml pr jaha data shw kra rhe he wha pr dynamically hmne ek button  element ko add kiya edit k liye 
+2.)editBLog functionc call kra tha button click pr usme hmne hmare array ki current id pass ki he
+3.)array ke ander se element ko find kiya 
+4.)hmare form ke input me title and body set kr rhe he  
+5.)uske bad line no 5 me hmne currentEditingId ka ek variable banaya 
+6.)currentEditingId ke ander id ko store kraya 
+7.)onsave pr user click kregaus waqt hmne condition set ki he if currentEditingId ke ander ager kuch value he to record update kro wrna kro save kro
+8.)currentEditingId ke behalf pr array ka index find kiya he 
+9.) index pkrkr hmne array ko update kra he 
+10.)currentid null kri he taqe har bar edit nhi ho record 
