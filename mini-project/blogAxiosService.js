@@ -1,43 +1,55 @@
-// blogService.js
-// This file contains functions for performing CRUD operations using Axios with JSON Server.
 
-import axios from 'axios';
 
-// Base URL for the JSON Server
-const baseUrl = 'http://localhost:3000/blog';
+// Below are the functions that interact with the JSON Server using Axios
 
-// Function to get all blog posts
-export async function getPosts() {
+/**
+ * Retrieves all blog posts from the server.
+ * Axios simplifies the process of making HTTP requests.
+ * This function makes a GET request to the JSON Server and returns the response data.
+ */
+async function getPosts() {
     try {
         const response = await axios.get(baseUrl);
-        return response.data; // Axios automatically parses the JSON response
+        return response.data;
     } catch (error) {
         console.error('Error fetching blog posts:', error);
     }
 }
 
-// Function to add a new blog post
-export async function addPost(post) {
+/**
+ * Adds a new blog post to the server.
+ * This function uses Axios to send the new post data using a POST request.
+ * Axios automatically sets the content type and converts the JavaScript object to JSON.
+ */
+async function addPost(post) {
     try {
-        const response = await axios.post(baseUrl, post); // No need to stringify the post
+        const response = await axios.post(baseUrl, post);
         return response.data;
     } catch (error) {
         console.error('Error adding new post:', error);
     }
 }
 
-// Function to update an existing blog post
-export async function updatePost(id, updatedPost) {
+/**
+ * Updates an existing blog post.
+ * This function uses Axios to send the updated post data with a PUT request.
+ * Axios takes care of the necessary headers and data serialization.
+ */
+async function updatePost(id, updatedPost) {
     try {
-        const response = await axios.put(`${baseUrl}/${id}`, updatedPost); // No need to stringify the updated post
+        const response = await axios.put(`${baseUrl}/${id}`, updatedPost);
         return response.data;
     } catch (error) {
         console.error('Error updating post:', error);
     }
 }
 
-// Function to delete a blog post
-export async function deletePost(id) {
+/**
+ * Deletes a blog post from the server.
+ * This function uses Axios to send a DELETE request.
+ * It's a straightforward way to handle HTTP DELETE requests.
+ */
+async function deletePost(id) {
     try {
         const response = await axios.delete(`${baseUrl}/${id}`);
         return response.data;
@@ -45,5 +57,3 @@ export async function deletePost(id) {
         console.error('Error deleting post:', error);
     }
 }
-
-// Note: Ensure JSON Server is running on localhost:3000
