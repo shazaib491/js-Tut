@@ -1,21 +1,25 @@
 function sum(a, b) {
   return new Promise((resolve, reject) => {
-    s = a + b;
-    if (s) {
-      resolve("sum of given no is " + s);
-    } else {
-      reject("negative value");
-    }
+    let s = a + b;
+    setTimeout(()=>{
+      if (s) {
+        resolve("Sum of two no is" + s);
+      } else {
+        reject("Promise is reject");
+      }
+    },10000)
   });
 }
 
-sum(0, 0)
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((dta) => {
-    console.log(dta);
-  })
-  .finally(() => {
-    console.log("done");
-  });
+sum(10, 20)
+.then(success)
+.catch(error);
+
+// kam ho gya to
+function success(value) {
+  console.log("Success", value);
+}
+
+function error(value) {
+  console.log("Error", value);
+}

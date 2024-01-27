@@ -16,8 +16,9 @@ let blogTable = [
     id: 2,
     title: "Second Post",
     body: "Second Post Description",
-  },
+  }
 ];
+
 
 
 function show(){//3
