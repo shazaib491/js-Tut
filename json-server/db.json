@@ -1,3 +1,9 @@
 {
-  "blogs": []
+  "blogs": [
+    {
+      "id": "4a0d",
+      "title": "data added ",
+      "body": "this is for testing"
+    }
+  ]
 }
