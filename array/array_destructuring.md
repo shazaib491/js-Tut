@@ -104,3 +104,13 @@ console.log(num); // 30
 
 These examples showcase how array destructuring can simplify your code, making it more readable and expressive.
 
+
+const obj = {
+  name: 'John Doe',
+  age: 30,
+  profession: 'Software Engineer'
+};
+
+for (const [key, value] of Object.entries(obj)) {
+  console.log(`${key}: ${value}`);
+}

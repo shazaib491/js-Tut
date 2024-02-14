@@ -98,4 +98,45 @@ function sum(...numbers){
 
 }
 
-sum(10,20,30,40,50,40,50,60)
+// sum(10,20,30,40,50,40,50,60)
+
+const obj = {
+    name: 'John Doe',
+    age: 30,
+    profession: 'Software Engineer',
+    children:["john","doe"],
+    user:{
+        name:'yser',
+        email:'yser@example.com'
+    }
+  };
+
+
+  console.log()
+
+// console.log(Object.entries(obj));
+
+// console.log(Object.keys(obj.user).length)
+
+for(let [key,value] of Object.entries(obj)){
+    // console.log(element)
+    // let [key,value]=element;
+    // console.log(key,value)
+    // if(typeof value=="object" && value.length){
+        // console.log(value)
+    // }   
+    // console.log(value);
+    let ObjectExist=typeof value=="object";//true
+    let ObjectLengthExist=Object.keys(value).length; //2 
+    let isNotTypeOfArray=!Array.isArray(value);// false
+
+    if( ObjectExist &&  ObjectLengthExist && isNotTypeOfArray){
+        console.log(value);
+    }
+
+}
+
+
+// let arrs=["name","john"]
+// let [key,value]=arrs;
+

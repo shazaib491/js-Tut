@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+      #isdlfnfDemo {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"    ></div>
+
+    <button id="practice">Click</button>
+
+    <script>
+      const demo = document.getElementById("demo");
+    //   demo.innerHTML += `
+    //         <h1>Hello World!</h1>
+    //     `;
+      // demo.style="color:red;background-color:black"
+      // demo.style.color="red";
+      // demo.style.backgroundColor="black";
+      // demo.setAttribute("style","color:red")
+      //   demo.setAttribute("class", "container");
+      //   demo.setAttribute("id", "isdlfnfDemo");
+      //   console.log(demo.getAttribute("id"))
+      //   console.log(demo);
+      // demo.classList.add("container");
+      // demo.classList.add("container1");
+      // demo.classList.remove("container1");
+
+      // demo.classList.toggle("")
+
+      function demos() {
+        demo.classList.toggle("container");
+      }
+
+
+      let practiceButton=document.getElementById("practice");
+    //   practiceButton.addEventListener("click",function(){
+    //     console.log("practice clicked")
+    //   })
+    practiceButton.addEventListener("click",demos);
+      demo.addEventListener("dblclick",()=>{
+        console.log("mouseover")
+      })
+
+    // practiceButton.removeEventListener("click",demos);
+
+    </script>
+  </body>
+</html>
