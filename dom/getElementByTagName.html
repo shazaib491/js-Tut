@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css"
+      integrity="sha512-r0fo0kMK8myZfuKWk9b6yY8azUnHCPhgNz/uWDl2rtMdWJlk7gmd9socvGZdZzICwAkMgfTkVrplDahQ07Gi0A=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="username">
+      <h1>Zero Wolrd 0</h1>
+    </div>
+    <div class="username">
+      <h1>Hello Wolrd 1</h1>
+    </div>
+    <div class="username">
+      <h1>Hello Wolrd2 2</h1>
+    </div>
+    <div class="username">
+      <h1>Hello Wolrd3 3</h1>
+    </div>
+    <div class="username">
+      <h1>Hello Wolrd4 </h1>
+    </div>
+    <div class="username">
+      <h1>Hello Wolrd5</h1>
+    </div>
+
+    <script>
+      let classNames = document.getElementsByClassName("username");
+      //   classNames[2].remove()
+
+      classNames = [...classNames];
+
+    //   classNames.forEach((element)=>{
+    //     console.log(element);
+    //   })
+
+    // let seElement=classNames.find((element)=>{
+    //     if(element.innerText=="Hello Wolrd2"){
+    //         // console.log("find Element",element)
+    //         return element;
+    //     }
+    // })
+    classNames.forEach((element, index) => {
+    if (index % 2 === 0) {
+        element.style.fontSize = "10%"; // Make sure to include the unit (e.g., "px" for pixels)
+    }
+});
+
+
+    
+
+      //   classNames = classNames.filter((element, index) => {
+      //     if(index==2){
+      //         // element.remove()
+      //         element.setAttribute("style","color:red")
+      //         element.setAttribute("id","admin")
+      //         element.innerHTML+="<h1>admin</h1>"
+      //     }
+      // })
+
+    //   let singleElement = classNames.find((element) => {
+    //     if (element.innerText == "Hello Wolrd2") {
+    //       return element;
+    //     }
+    //     // if(element.innerText=="Hello Wolrd3"){
+    //     //     console.log("Hello")
+    //     // }
+    //   });
+
+    //   console.log(singleElement);
+    //   singleElement.innerText += "Goto Hell";
+
+      //     // console.log(element)
+      //   });
+
+      //   console.log(classNames)
+    </script>
+  </body>
+</html>

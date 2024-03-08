@@ -1,58 +1,58 @@
-function sum(a, b) {
-  return new Promise((resolve, reject) => {
-    let s = a + b; //10+20
-    setTimeout(() => {
-      if (s) {
-        //0 se bari value to ye truthy return krega
-        resolve(s);
-      } else {
-        reject("Promise is reject"); //ager 0 ya 0 se choti value hogi to falsy return krega
-      }
-    }, 1000);
-  });
-}
+// function sum(a, b) {
+//   return new Promise((resolve, reject) => {
+//     let s = a + b; //10+20
+//     setTimeout(() => {
+//       if (s) {
+//         //0 se bari value to ye truthy return krega
+//         resolve(s);
+//       } else {
+//         reject("Promise is reject"); //ager 0 ya 0 se choti value hogi to falsy return krega
+//       }
+//     }, 1000);
+//   });
+// }
 
-function square(result) {
-  return new Promise((resolve, reject) => {
-    let s = result * result; //10+20
-    setTimeout(() => {
-      if (s) {
-        //0 se bari value to ye truthy return krega
-        resolve("sum of two no is " + s);
-      } else {
-        reject("Promise is reject"); //ager 0 ya 0 se choti value hogi to falsy return krega
-      }
-    }, 1000);
-  });
-}
+// function square(result) {
+//   return new Promise((resolve, reject) => {
+//     let s = result * result; //10+20
+//     setTimeout(() => {
+//       if (s) {
+//         //0 se bari value to ye truthy return krega
+//         resolve("sum of two no is " + s);
+//       } else {
+//         reject("Promise is reject"); //ager 0 ya 0 se choti value hogi to falsy return krega
+//       }
+//     }, 1000);
+//   });
+// }
 
-function multiply(result) {
-  return new Promise((resolve, reject) => {
-    let s = result * 2; //10+20
-    setTimeout(() => {
-      if (s) {
-        //0 se bari value to ye truthy return krega
-        resolve(s);
-      } else {
-        reject("Promise is reject"); //ager 0 ya 0 se choti value hogi to falsy return krega
-      }
-    }, 1000);
-  });
-}
+// function multiply(result) {
+//   return new Promise((resolve, reject) => {
+//     let s = result * 2; //10+20
+//     setTimeout(() => {
+//       if (s) {
+//         //0 se bari value to ye truthy return krega
+//         resolve(s);
+//       } else {
+//         reject("Promise is reject"); //ager 0 ya 0 se choti value hogi to falsy return krega
+//       }
+//     }, 1000);
+//   });
+// }
 
-function divide(result) {
-  return new Promise((resolve, reject) => {
-    let s = result / 2; //10+20
-    setTimeout(() => {
-      if (s) {
-        //0 se bari value to ye truthy return krega
-        resolve(s);
-      } else {
-        reject("Promise is reject"); //ager 0 ya 0 se choti value hogi to falsy return krega
-      }
-    }, 1000);
-  });
-}
+// function divide(result) {
+//   return new Promise((resolve, reject) => {
+//     let s = result / 2; //10+20
+//     setTimeout(() => {
+//       if (s) {
+//         //0 se bari value to ye truthy return krega
+//         resolve(s);
+//       } else {
+//         reject("Promise is reject"); //ager 0 ya 0 se choti value hogi to falsy return krega
+//       }
+//     }, 1000);
+//   });
+// }
 
 // sum(10, 20)
 //   .then((sumResult) => {
@@ -95,24 +95,24 @@ function divide(result) {
 // }
 
 // //
-async function handleOperation() {
-  const sumResult = await sum(10, 20);
-  const sqaureResult = await square(sumResult);
-  const multipleResult = await multiply(sqaureResult);
-  const divideResult = await divide(multipleResult);
-  return divideResult;
-}
+// async function handleOperation() {
+//   const sumResult = await sum(10, 20);
+//   const sqaureResult = await square(sumResult);
+//   const multipleResult = await multiply(sqaureResult);
+//   const divideResult = await divide(multipleResult);
+//   return divideResult;
+// }
 
-console.log("hello world");
-handleOperation().then((answer) => {
-  console.log(answer);
-});
+// console.log("hello world");
+// handleOperation().then((answer) => {
+//   console.log(answer);
+// });
 
 //
-// 4 method 
-// GET 
+// 4 method
+// GET
 // POST
-// PUT 
+// PUT
 // DELETE
 // fetch("https://jsonplaceholder.typicode.com/todos")
 //   .then((response) => {
@@ -122,9 +122,32 @@ handleOperation().then((answer) => {
 //     console.log(error);
 //   });
 
-async function getData(){
-  const data=await fetch("https://jsonplaceholder.typicode.com/todos");
-  console.log(data);
+// async function getData() {
+//   const data = await fetch("https://jsonplaceholder.typicode.com/todos");
+//   console.log(data);
+// }
+
+// getData();
+
+// let obj=new Promise();
+let ischeck = true;
+function getResponseFromServer() {
+  return new Promise((resolve, reject) => {
+    if (ischeck) {
+      resolve("Promise is resovled");
+    } else {
+      reject("Promise is reject");
+    }
+  });
 }
 
-getData()
+getResponseFromServer()
+  .then(
+    (response) => {
+    console.log(response);
+  }//recieve 
+  
+  )
+  .catch((error) => {
+    console.log(error);
+  });

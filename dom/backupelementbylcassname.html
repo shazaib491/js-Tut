@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        display: none;
+      }
+    </style>
+<!-- 
+    <div id="demo">MyID</div>
+    <img src="./pic_bulboff.gif" id="image" alt="">
+    <button onclick="toggle()">Toggle</button> -->
+    
+
+    <h1 class="container">Hello World</h1>
+    <h1 class="container">Hello World</h1>
+    <h1 class="container">Hello World</h1>
+    <h1 class="container">Hello World</h1>
+    <h1 class="container">Hello World</h1>
+    <script>
+      //   function show(){
+      //       console.log("Hello World")
+      //   }
+      //     let pointId=document.getElementById("demo");
+      //     let img=document.getElementById("image");
+      //     img.src="./pic_bulbon.gif";   
+      //     pointId.innerHTML=""
+      // //     pointId.style.color="red";
+      // //     pointId.style.background="green"
+      // //     console.log(pointId);
+      //   let elementClass = document.getElementsByClassName("container");
+      // //   // console.log(elementClass)
+      // //   elementClass[0].innerText = "Maaaz Khan";
+
+      // function toggle(){
+      //   for (let i = 0; i < elementClass.length; i++) {
+      //   if ((elementClass[i].style.display == "block")) {
+      //     elementClass[i].style.display = "none";
+      //   } else {
+      //     elementClass[i].style.display = "block";
+      //   }
+      // }
+      // }
+      let elementClassName=document.getElementsByClassName("container");
+
+      console.log(elementClassName)
+
+      for(let arr of elementClassName){
+        console.log(arr.textContent);
+      }
+      
+    </script>
+  </body>
+</html>

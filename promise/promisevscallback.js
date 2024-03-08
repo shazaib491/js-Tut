@@ -64,14 +64,14 @@ Promises: Use a built-in mechanism (resolve and reject) for success and error ha
 //     .catch(error => {
 //         console.error(error);
 //     });
-
+// reject;
 //promise hell
 function prepareStarter() {
   return new Promise((resolve, reject) => {
     console.log("Preparing the starter...");
     setTimeout(() => {
       console.log("Starter is ready!");
-      resolve();
+      resolve("promise is resolved");
     }, 1000);
   });
 }
@@ -87,14 +87,70 @@ function prepareMainCourse() {
 }
 
 function prepareDessert() {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     console.log("Preparing the dessert...");
     setTimeout(() => {
       console.log("Dessert is ready!");
-      resolve();
+      reject("khatte me shakar nhi he ");
     }, 1000);
   });
 }
+
+// prepareStarter()
+//   .then(() => {
+//     prepareMainCourse()
+//       .then(() => {
+//         prepareDessert()
+//           .then(() => {
+//             console.log("All courses are ready!");
+//           })
+//           .catch((error) => console.log(error));
+//       })
+//       .catch((error) => {
+//         console.log(error);
+//       });
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// prepareStarter()
+//   .then(() => {
+//     return prepareMainCourse();
+//   })
+//   .then(() => {
+//     return prepareDessert();
+//   })
+//   .then(() => {
+//     console.log("All courses are ready!");
+//   })
+//   .catch((error) => {
+//     console.log("Something went wrong");
+//   });
+
+// prepareStarter()
+//   .then((response) => prepareMainCourse())
+//   .then(() => prepareDessert())
+//   .then(() => {
+//     console.log("All courses are ready!");
+//   })
+//   .catch((error) => {
+//     console.log("Something went wrong");
+//   });
+
+async function course() {
+  try {
+    let starter = await prepareStarter();
+    let mainCourse = await prepareMainCourse();
+    let dessert = await prepareDessert();
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+course().then(() => {
+  console.log("All courses are ready!");
+});
 
 // prepareStarter()
 //     .then(() => prepareMainCourse())
@@ -106,10 +162,10 @@ function prepareDessert() {
 //         console.error("An error occurred:", error);
 //     });
 
-async function toHandleAsyncOperation() {
-  const startReady = await prepareStarter();
-  const mainCourse = await prepareMainCourse();
-  const desertCourse = await prepareDessert();
-}
-toHandleAsyncOperation();
-console.log("handling asyc operations")
+// async function toHandleAsyncOperation() {
+//   const startReady = await prepareStarter();
+//   const mainCourse = await prepareMainCourse();
+//   const desertCourse = await prepareDessert();
+// }
+// toHandleAsyncOperation();
+// console.log("handling asyc operations");

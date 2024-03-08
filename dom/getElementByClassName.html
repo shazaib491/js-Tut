@@ -8,45 +8,39 @@
   <body>
     <style>
       .container {
-        display: none;
       }
     </style>
-
-    <div id="demo">MyID</div>
-    <img src="./pic_bulboff.gif" id="image" alt="">
-    <button onclick="toggle()">Toggle</button>
-
+    <button  onclick="addElement('h1','container','Yaseen Khan')" >Add Element</button>
     <h1 class="container">Hello World</h1>
     <h1 class="container">Hello World</h1>
+    <h1 class="container">Hello World123</h1>
     <h1 class="container">Hello World</h1>
     <h1 class="container">Hello World</h1>
-    <h1 class="container">Hello World</h1>
-    <button onclick="show()" >Submit</button>
+    <div>sdjnjfsdn</div>
     <script>
-        function show(){
-            console.log("Hello World")
-        }
-          let pointId=document.getElementById("demo");
-          let img=document.getElementById("image");
-          img.src="./pic_bulbon.gif";   
-          pointId.innerHTML=""
-      //     pointId.style.color="red";
-      //     pointId.style.background="green"
-      //     console.log(pointId);
-        let elementClass = document.getElementsByClassName("container");
-      //   // console.log(elementClass)
-      //   elementClass[0].innerText = "Maaaz Khan";
+      let elementTagName = document.getElementsByTagNameNS("h1,div");
+      console.log(elementTagName[0].tagName)
+      // for (let arr of elementClassName) {
+      //   if(arr.textContent=="Hello World123"){
+      //     arr.remove()
+      //   }
+      //   console.log(arr.textContent);
+      // }
 
-      function toggle(){
-        for (let i = 0; i < elementClass.length; i++) {
-        if ((elementClass[i].style.display == "block")) {
-          elementClass[i].style.display = "none";
-        } else {
-          elementClass[i].style.display = "block";
-        }
+      // for(let i=0; i<=elementClassName.length;i++){
+      //   if(elementClassName[i]?.textContent=="Hello World123"){
+      //     elementClassName[i].remove();
+      //   }
+      // }
+
+      function addElement(elementName,className,textString) {
+        var newElement = document.createElement(elementName);//element ko crete kra
+        newElement.className = className; // class add kri
+        newElement.textContent = textString; // content add kra 
+        document.bodyb.appendChild(newElement);// body me jakr append krdiya
       }
-      }
-      
+
+
     </script>
   </body>
 </html>

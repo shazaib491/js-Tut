@@ -30,6 +30,36 @@ prepareStarter(() => {
     });
 });
 
+// prepareStarter(()=>{
+//     prepareMainCourse(()=>{
+//         prepareDessert(()=>{
+//             console.log("All courses are ready!");
+
+//         })
+//     })
+// })
+
 
 
 // [1,2,3,4,5].forEach(()=>{})
+
+let isCheck=false;
+function getResponseFromServer(resolve,reject){
+    if(isCheck){
+        resolve();
+    }else{
+        reject();
+    }
+}
+
+function success(){
+console.log("Success Message")
+}
+
+
+function error(){
+console.log("error Message")
+
+}
+
+getResponseFromServer(success,error)
