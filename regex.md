@@ -116,6 +116,63 @@ Regular expressions are patterns used to match character combinations in strings
    console.log(newStr); // "hello-world"
    ```
 
+   
+regular expression for validating common mobile phone number formats.
+
+ This example assumes a basic 10-digit mobile number, which is common in many countries, without any country code or special characters.
+
+### Basic 10-digit Mobile Number
+```javascript
+let regex = /^[0-9]{10}$/;
+```
+
+### Explanation:
+- `^`: Asserts the start of the string.
+- `[0-9]`: Matches any digit from 0 to 9.
+- `{10}`: Ensures that the previous token (a digit) is repeated exactly 10 times.
+- `$`: Asserts the end of the string.
+
+### Example Usage
+```javascript
+let validNumber = "1234567890";
+let invalidNumber = "12345abcde";
+
+console.log(regex.test(validNumber)); // true
+console.log(regex.test(invalidNumber)); // false
+```
+
+### Including Country Code and Special Characters
+If you want a more flexible regex that can handle country codes and special characters like spaces, dashes, or parentheses, you can use the following regex:
+
+```javascript
+let regex = /^\+?(\d{1,3})?[-.\s]?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})$/;
+```
+
+### Explanation:
+- `^`: Asserts the start of the string.
+- `\+?`: Matches an optional '+' character (for country code).
+- `(\d{1,3})?`: Matches an optional country code of 1 to 3 digits.
+- `[-.\s]?`: Matches an optional separator (dash, dot, or space).
+- `(\d{1,4})`: Matches 1 to 4 digits (area code).
+- `[-.\s]?`: Matches an optional separator.
+- `(\d{1,4})`: Matches 1 to 4 digits (prefix).
+- `[-.\s]?`: Matches an optional separator.
+- `(\d{1,4})`: Matches 1 to 4 digits (line number).
+- `[-.\s]?`: Matches an optional separator.
+- `(\d{1,9})`: Matches 1 to 9 digits (extension).
+- `$`: Asserts the end of the string.
+
+### Example Usage
+```javascript
+let validNumber1 = "+1 123-456-7890";
+let validNumber2 = "1234567890";
+let invalidNumber = "12345abcde";
+
+console.log(regex.test(validNumber1)); // true
+console.log(regex.test(validNumber2)); // true
+console.log(regex.test(invalidNumber)); // false
+```
+
 ## Practice Exercises
 1. **Validate a Phone Number**: Write a regex to validate phone numbers in the format `(123) 456-7890`.
 2. **Extract Words**: Write a regex to extract all words from a string.
