@@ -1,5 +1,5 @@
 
-### **Section 1: Theoretical Questions (20 Marks)**
+### **Section 1: Questions (20 Marks)**
 
 #### **Q1.** (2 Marks)  
 What is HTML and why is it used in web development ?
