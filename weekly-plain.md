@@ -89,30 +89,25 @@
   - Event Handling: `addEventListener`, Event Types (Click, Hover, Key Events)
   - Building Interactive Web Pages with Dynamic Content
 
-### **Weeks 9-10: JavaScript ES6+ Features**
+### **Weeks 9: JavaScript ES6+ Features**
 - **Week 9: Modern JavaScript (ES6+)**
   - Destructuring Objects and Arrays
   - Spread Operator (`...`) and Rest Parameters
   - Template Literals for String Interpolation
-  - Default Parameters in Functions
   - Introduction to Classes: Constructors, Methods, and Inheritance
-  - Static Methods and Getters/Setters
   - Working with JavaScript Modules: `import` and `export`
- 
-### **Weeks 10: APIs and Testing**
-- **Week 10: Working with APIs**
+  - Working with APIs**
   - Consuming RESTful APIs with Fetch and Axios
   - Handling API Responses: JSON Status Codes
-  - Pagination, Caching, and Rate Limiting
 
-### **Optional Week 11: Project and Review**
-- **Week 11: Final Project and Best Practices**
+### **Optional Week 10 Project and Review**
+- **Week 10: Final Project and Best Practices**
   - Build a Full-Scale Project (e.g., To-Do App, Weather App, Blogging Platform)
   - Focus on Applying All Concepts (DOM, Async, APIs)
   - Code Refactoring and Optimization
   - Final Review: Code Best Practices, Performance Optimization
 
-  ### **Week 12-13: Fundamentals of React**
+  ### **Week 11-12: Fundamentals of React**
 - **Setting up the React Environment**:
   - Using `create-react-app` to scaffold a new project
   - Overview of React project structure
@@ -140,7 +135,7 @@
 
 ---
 
-### **Week 14: Intermediate React Concepts**
+### **Week 13: Intermediate React Concepts**
 - **React Lifecycle Methods (Class Components)**:
   - Understanding Mounting, Updating, and Unmounting phases
   - Key lifecycle methods: `componentDidMount`, `componentDidUpdate`, `componentWillUnmount`
@@ -167,7 +162,7 @@
 - **Goal**: Build a multi-page app, such as a blog or a simple portfolio.
 
 
-### **Week 15: Node.js Fundamentals**
+### **Week 14: Node.js Fundamentals**
 - **Setting Up Node.js Environment**:
   - Installing Node.js and npm
   - Understanding `package.json` and npm scripts
@@ -185,7 +180,7 @@
 
 ---
 
-### **Week 16: Express.js Basics**
+### **Week 15: Express.js Basics**
 - **Introduction to Express.js**:
   - Setting up an Express project
   - Understanding middleware and routing
@@ -203,7 +198,7 @@
 
 ---
 
-### **Week 17: MongoDB and Mongoose Basics**
+### **Week 16: MongoDB and Mongoose Basics**
 - **Introduction to MongoDB**:
   - Understanding NoSQL databases and setting up MongoDB locally or with MongoDB Atlas
   - CRUD operations (Create, Read, Update, Delete) in MongoDB using the Mongo Shell
@@ -217,7 +212,7 @@
 
 ---
 
-### **Week 19: Basic Authentication and Deployment**
+### **Week 17: Basic Authentication and Deployment**
 - **User Authentication with Express and JWT**:
   - Introduction to JSON Web Tokens (JWT)
   - Setting up user authentication (register and login endpoints)
