@@ -98,32 +98,21 @@
   - Introduction to Classes: Constructors, Methods, and Inheritance
   - Static Methods and Getters/Setters
   - Working with JavaScript Modules: `import` and `export`
-
-### **Weeks 10-11: Advanced JavaScript**
-- **Week 10: Error Handling and Debugging**
-  - JavaScript Error Types: Syntax, Runtime, Logical Errors
-  - Using `try-catch` Blocks for Error Handling
-  - Custom Error Objects
-  - Debugging Tools in Chrome DevTools
-  - Higher-Order Functions and Closures
-  - Pure Functions, Immutability, and Side Effects
-  - Recursion and Tail Call Optimization
-  - Map, Filter, Reduce Revisited in Functional Programming Context
  
-### **Weeks 11: APIs and Testing**
-- **Week 11: Working with APIs**
+### **Weeks 10: APIs and Testing**
+- **Week 10: Working with APIs**
   - Consuming RESTful APIs with Fetch and Axios
   - Handling API Responses: JSON Status Codes
   - Pagination, Caching, and Rate Limiting
 
-### **Optional Week 12: Project and Review**
-- **Week 12: Final Project and Best Practices**
+### **Optional Week 11: Project and Review**
+- **Week 11: Final Project and Best Practices**
   - Build a Full-Scale Project (e.g., To-Do App, Weather App, Blogging Platform)
   - Focus on Applying All Concepts (DOM, Async, APIs)
   - Code Refactoring and Optimization
   - Final Review: Code Best Practices, Performance Optimization
 
-  ### **Week 13-14: Fundamentals of React**
+  ### **Week 12-13: Fundamentals of React**
 - **Setting up the React Environment**:
   - Using `create-react-app` to scaffold a new project
   - Overview of React project structure
@@ -151,7 +140,7 @@
 
 ---
 
-### **Week 15: Intermediate React Concepts**
+### **Week 14: Intermediate React Concepts**
 - **React Lifecycle Methods (Class Components)**:
   - Understanding Mounting, Updating, and Unmounting phases
   - Key lifecycle methods: `componentDidMount`, `componentDidUpdate`, `componentWillUnmount`
@@ -178,7 +167,7 @@
 - **Goal**: Build a multi-page app, such as a blog or a simple portfolio.
 
 
-### **Week 16: Node.js Fundamentals**
+### **Week 15: Node.js Fundamentals**
 - **Setting Up Node.js Environment**:
   - Installing Node.js and npm
   - Understanding `package.json` and npm scripts
@@ -196,7 +185,7 @@
 
 ---
 
-### **Week 17: Express.js Basics**
+### **Week 16: Express.js Basics**
 - **Introduction to Express.js**:
   - Setting up an Express project
   - Understanding middleware and routing
@@ -214,7 +203,7 @@
 
 ---
 
-### **Week 18: MongoDB and Mongoose Basics**
+### **Week 17: MongoDB and Mongoose Basics**
 - **Introduction to MongoDB**:
   - Understanding NoSQL databases and setting up MongoDB locally or with MongoDB Atlas
   - CRUD operations (Create, Read, Update, Delete) in MongoDB using the Mongo Shell
