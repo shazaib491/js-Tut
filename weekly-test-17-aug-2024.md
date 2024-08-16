@@ -1,4 +1,18 @@
+---
 
+### **HTML Test - Beginner Level**
+
+**Total Marks: 50**  
+**Time Allowed: 2 hours**
+
+---
+
+### **Instructions:**
+
+1. **Section 1** contains **12 questions**, out of which you are required to attempt **any 10**..
+2. **Section 2** contains **6 questions**, out of which you are required to attempt **any 4**.
+
+---
 ### **Section 1: Questions (20 Marks)**
 
 #### **Q1.** (2 Marks)  
