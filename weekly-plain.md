@@ -89,69 +89,49 @@
   - Event Handling: `addEventListener`, Event Types (Click, Hover, Key Events)
   - Building Interactive Web Pages with Dynamic Content
 
-- **Week 9: Advanced DOM Manipulation**
-  - Working with Forms: Handling Input, Validation
-  - Creating and Removing Elements Dynamically
-  - Event Delegation for Efficient Event Handling
-  - Local Storage and Session Storage: Storing Data in the Browser
-
-### **Weeks 10-11: JavaScript ES6+ Features**
-- **Week 10: Modern JavaScript (ES6+)**
+### **Weeks 9-10: JavaScript ES6+ Features**
+- **Week 9: Modern JavaScript (ES6+)**
   - Destructuring Objects and Arrays
   - Spread Operator (`...`) and Rest Parameters
   - Template Literals for String Interpolation
   - Default Parameters in Functions
-
-- **Week 11: Classes and Modules**
   - Introduction to Classes: Constructors, Methods, and Inheritance
   - Static Methods and Getters/Setters
   - Working with JavaScript Modules: `import` and `export`
-  - Module Bundlers (e.g., Webpack, Parcel)
 
-### **Weeks 12-13: Advanced JavaScript**
-- **Week 12: Error Handling and Debugging**
+### **Weeks 10-11: Advanced JavaScript**
+- **Week 10: Error Handling and Debugging**
   - JavaScript Error Types: Syntax, Runtime, Logical Errors
   - Using `try-catch` Blocks for Error Handling
   - Custom Error Objects
   - Debugging Tools in Chrome DevTools
-
-- **Week 13: Functional Programming Concepts**
   - Higher-Order Functions and Closures
   - Pure Functions, Immutability, and Side Effects
   - Recursion and Tail Call Optimization
   - Map, Filter, Reduce Revisited in Functional Programming Context
-
-### **Weeks 14-15: APIs and Testing**
-- **Week 14: Working with APIs**
+ 
+### **Weeks 11: APIs and Testing**
+- **Week 11: Working with APIs**
   - Consuming RESTful APIs with Fetch and Axios
-  - Handling API Responses: JSON, XML, Status Codes
+  - Handling API Responses: JSON Status Codes
   - Pagination, Caching, and Rate Limiting
-  - Introduction to GraphQL (Optional)
 
-- **Week 15: Testing JavaScript**
-  - Introduction to Unit Testing: Why Test?
-  - Testing Frameworks: Mocha, Jest, Chai
-  - Writing Test Cases for Functions and Components
-  - Asynchronous Testing and Mocking
-
-### **Optional Week 16: Project and Review**
-- **Week 16: Final Project and Best Practices**
+### **Optional Week 12: Project and Review**
+- **Week 12: Final Project and Best Practices**
   - Build a Full-Scale Project (e.g., To-Do App, Weather App, Blogging Platform)
   - Focus on Applying All Concepts (DOM, Async, APIs)
   - Code Refactoring and Optimization
   - Final Review: Code Best Practices, Performance Optimization
 
-  ### **Week 17-19: Fundamentals of React**
+  ### **Week 12-14: Fundamentals of React**
 - **Setting up the React Environment**:
   - Using `create-react-app` to scaffold a new project
   - Overview of React project structure
   - Introduction to development tools (React DevTools, VSCode)
-
 - **JSX (JavaScript XML)**:
   - Writing JSX syntax
   - Embedding JavaScript expressions in JSX
   - Rendering elements with JSX
-
 - **Components**:
   - Function Components vs. Class Components
   - Creating and exporting components
@@ -171,7 +151,7 @@
 
 ---
 
-### **Week 20-22: Intermediate React Concepts**
+### **Week 15: Intermediate React Concepts**
 - **React Lifecycle Methods (Class Components)**:
   - Understanding Mounting, Updating, and Unmounting phases
   - Key lifecycle methods: `componentDidMount`, `componentDidUpdate`, `componentWillUnmount`
@@ -198,7 +178,7 @@
 - **Goal**: Build a multi-page app, such as a blog or a simple portfolio.
 
 
-### **Week 23-24: Node.js Fundamentals**
+### **Week 16: Node.js Fundamentals**
 - **Setting Up Node.js Environment**:
   - Installing Node.js and npm
   - Understanding `package.json` and npm scripts
@@ -216,7 +196,7 @@
 
 ---
 
-### **Week 25-26: Express.js Basics**
+### **Week 17: Express.js Basics**
 - **Introduction to Express.js**:
   - Setting up an Express project
   - Understanding middleware and routing
@@ -234,7 +214,7 @@
 
 ---
 
-### **Week 27: MongoDB and Mongoose Basics**
+### **Week 18: MongoDB and Mongoose Basics**
 - **Introduction to MongoDB**:
   - Understanding NoSQL databases and setting up MongoDB locally or with MongoDB Atlas
   - CRUD operations (Create, Read, Update, Delete) in MongoDB using the Mongo Shell
@@ -248,7 +228,7 @@
 
 ---
 
-### **Week 28-30: Basic Authentication and Deployment**
+### **Week 19: Basic Authentication and Deployment**
 - **User Authentication with Express and JWT**:
   - Introduction to JSON Web Tokens (JWT)
   - Setting up user authentication (register and login endpoints)
