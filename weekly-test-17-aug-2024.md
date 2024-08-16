@@ -9,7 +9,7 @@
 
 ### **Instructions:**
 
-1. **Section 1** contains **12 questions**, out of which you are required to attempt **any 10**..
+1. **Section 1** contains **12 questions**, out of which you are required to attempt **any 10**.
 2. **Section 2** contains **6 questions**, out of which you are required to attempt **any 4**.
 
 ---
