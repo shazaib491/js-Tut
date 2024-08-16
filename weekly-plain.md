@@ -123,7 +123,7 @@
   - Code Refactoring and Optimization
   - Final Review: Code Best Practices, Performance Optimization
 
-  ### **Week 12-14: Fundamentals of React**
+  ### **Week 13-14: Fundamentals of React**
 - **Setting up the React Environment**:
   - Using `create-react-app` to scaffold a new project
   - Overview of React project structure
