@@ -110,4 +110,31 @@ while (l > -5) {
 | 5         | -4        | -4     |
 ```
 
+### JavaScript Code Using a While Loop:
+
+```javascript
+let sum = 0;
+let i = 1;
+while (i <= 10) {
+  sum += i;
+  i++;
+}
+console.log("Sum of first 10 natural numbers: ", sum);
+```
+
+### Iteration Table in Markdown Format:
+
+| Iteration | Current Number | Cumulative Sum |
+|-----------|----------------|----------------|
+| 1         | 1              | 1              |
+| 2         | 2              | 3              |
+| 3         | 3              | 6              |
+| 4         | 4              | 10             |
+| 5         | 5              | 15             |
+| 6         | 6              | 21             |
+| 7         | 7              | 28             |
+| 8         | 8              | 36             |
+| 9         | 9              | 45             |
+| 10        | 10             | 55             |
+
 This Markdown format organizes the loop examples and their respective iteration tables in a clear and structured manner, making it easy to understand the flow and output of each loop.
