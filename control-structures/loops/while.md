@@ -137,4 +137,39 @@ console.log("Sum of first 10 natural numbers: ", sum);
 | 9         | 9              | 45             |
 | 10        | 10             | 55             |
 
+
+Here’s how you can print the multiplication table of 2 in markdown format using JavaScript:
+
+```javascript
+ let i = 1;
+    let table = '';
+    while (i <= 10) {
+        console.log(`| 2 x ${i} | ${2 * i} |\n`;)
+        i++;
+    }
+
+
+```
+
+### Explanation:
+- This function generates the multiplication table in markdown format.
+- The table's header (`Multiplication`, `Result`) is printed first.
+- Then, a loop runs to generate each row of the table in the markdown format and appends it to a string.
+
+When run, it will print:
+
+```md
+| Multiplication | Result |
+| --------------- | ------ |
+| 2 x 1 | 2 |
+| 2 x 2 | 4 |
+| 2 x 3 | 6 |
+| 2 x 4 | 8 |
+| 2 x 5 | 10 |
+| 2 x 6 | 12 |
+| 2 x 7 | 14 |
+| 2 x 8 | 16 |
+| 2 x 9 | 18 |
+| 2 x 10 | 20 |
+```
 This Markdown format organizes the loop examples and their respective iteration tables in a clear and structured manner, making it easy to understand the flow and output of each loop.
