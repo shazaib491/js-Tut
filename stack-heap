@@ -1,0 +1,131 @@
+---
+
+1. What is Memory? (Memory kya hoti hai?)
+
+Memory ek jagah hai jahan data ko temporarily ya permanently store kiya jata hai jab aapka program chal raha hota hai. 
+JavaScript me memory ko Stack aur Heap me allocate kiya jata hai. Dono ka apna role hota hai data ko store karne aur manage karne ka.
+
+Diagram: (Basic Memory Concept)
+
+-------------------
+|      Memory      |
+|------------------|
+|   Stack Memory   |
+|------------------|
+|    Heap Memory   |
+-------------------
+
+Hinglish Explanation: Memory ek storage space hota hai jisme program ke execution ke dauran data store hota hai. JavaScript me memory do jagah pe store hoti hai: Stack aur Heap.
+
+
+---
+
+2. What is Stack? (Stack kya hota hai?)
+
+Stack memory ek ordered memory hoti hai jisme primitive values (jaise number, string, boolean, etc.) ko store kiya jata hai. Stack me data LIFO (Last In, First Out) order me store hota hai, yani jo value sabse last me stack me aati hai, wo sabse pehle remove hoti hai.
+
+Diagram of Stack:
+
+-------------------
+|   number: 10     | <-- Last In (sabse pehle remove hoga)
+|   string: "Hi"   |
+|   boolean: true  |
+-------------------
+
+Example:
+
+var num = 10;  // Stack memory me store hota hai
+var greeting = "Hi";  // Stack memory me store hota hai
+
+Hinglish Explanation: Stack memory ek ordered memory hai jo simple values ko store karti hai, aur ye fast hoti hai. Jaise hi ek function execute hota hai, stack me data store hota hai, aur jab function kaam khatam karta hai, wo data stack se remove ho jata hai.
+
+
+---
+
+3. What is Heap? (Heap kya hota hai?)
+
+Heap memory ek large, dynamic memory hoti hai jisme objects aur functions store kiye jate hain. JavaScript me objects aur functions heap memory me allocate hote hain kyunki inka size dynamic hota hai.
+
+Diagram of Heap:
+
+--------------------------
+|     { name: "John" }    |  <-- Object stored
+|     [1, 2, 3, 4]        |  <-- Array stored
+--------------------------
+
+Example:
+
+var person = { name: "John", age: 30 };  // Heap memory me object store hota hai
+var numbers = [1, 2, 3];  // Heap memory me array store hota hai
+
+Hinglish Explanation: Heap memory me complex values store hoti hain jaise objects, arrays, aur functions. Ye dynamically grow kar sakti hai, isiliye heap thoda slow hota hai comparison me stack se.
+
+
+---
+
+4. How JavaScript Primitive Values Work on Memory Management?
+
+Primitive values jaise number, string, boolean, null, aur undefined ko stack memory me store kiya jata hai. Kyunki primitives ka size fixed hota hai, wo easily stack me allocate aur de-allocate ho jate hain.
+
+Example:
+
+var x = 5;  // Primitive value (number) stack me store hota hai
+var y = "Hello";  // Primitive value (string) stack me store hota hai
+
+Hinglish Explanation: JavaScript me primitive values directly stack memory me store hoti hain. Jab program execute hota hai, to ye values temporary memory me store hoti hain, aur jab function khatam hota hai to ye values remove ho jati hain. Stack memory fast hoti hai kyunki primitive values ka size fixed hota hai.
+
+
+---
+
+5. How JavaScript Non-Primitive Values Work on Memory Management?
+
+Non-primitive values jaise objects, arrays, aur functions ko heap memory me store kiya jata hai. JavaScript me jab aap ek object banate ho, to uska reference stack me store hota hai, aur actual data heap memory me hota hai.
+
+Example:
+
+var obj = { name: "Alice" };  // Heap me object store hota hai, reference stack me
+var arr = [1, 2, 3];  // Heap me array store hota hai
+
+Hinglish Explanation: Non-primitive values ko heap me store kiya jata hai, kyunki unka size dynamic hota hai. Stack memory me sirf unka reference store hota hai. Heap memory slow hoti hai kyunki values ka size fixed nahi hota. Jab object ya array use nahi hota, to garbage collector unhe memory se hata deta hai.
+
+
+---
+
+6. What is Garbage Collector? (Garbage Collector kya hota hai?)
+
+JavaScript me garbage collector ek automatic process hota hai jo unused ya unreachable objects ko memory se hata deta hai taaki memory waste na ho. JavaScript me mark-and-sweep algorithm use hota hai garbage collection ke liye.
+
+Example of Garbage Collection:
+
+function createPerson() {
+    var person = { name: "John" };  // Heap me object store hota hai
+}
+
+createPerson();  // Function execute hone ke baad, person object unreachable ho jata hai
+// Garbage collector is object ko memory se hata dega
+
+Hinglish Explanation: Garbage collector ek automatic system hota hai jo un objects ko memory se hata deta hai jo ab accessible ya reachable nahi hain. Jab ek object ka koi reference nahi hota, garbage collector us object ko memory se clean kar deta hai.
+
+
+---
+
+Summary:
+
+1. Memory: Program ke dauran data ko store karne ka jagah (Stack aur Heap).
+
+
+2. Stack Memory: Primitive values ko store karta hai, fast aur LIFO order follow karta hai.
+
+
+3. Heap Memory: Objects aur functions ko store karta hai, dynamic aur slow hota hai.
+
+
+4. Primitive Values: Stack me directly store hoti hain, aur easily manage ki ja sakti hain.
+
+
+5. Non-Primitive Values: Heap me store hoti hain, reference stack me hota hai.
+
+
+6. Garbage Collector: Unused ya unreachable objects ko memory se remove karta hai, memory ko free karta hai.
+
+
