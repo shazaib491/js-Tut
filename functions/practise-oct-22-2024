@@ -1,0 +1,49 @@
+// let inputId = document.getElementById("demo");
+// console.log(inputId.value);
+
+// let numb = 0;
+
+// let parent = document.getElementById("parentElement");
+
+// function create(event) {
+//   numb = +event.target.value;
+// }
+
+// function calculateSum() {
+//   let sum = 0;
+//   for (let i = 0; i <=numb; i++) {
+//     sum += i;
+//   }
+
+//   parent.textContent = sum;
+// }
+
+// regular function
+
+// function expression
+// var express=(a)=>a*a;
+
+// console.log(express(10));
+
+// var sum=function(a,b){
+//     console.log("sum of two no is ",a+b);
+// }
+
+// sum(10,20);
+
+// var product=function(a){
+//     return Math.floor(Math.random()*a +100);
+// }
+
+// console.log(product(100));
+
+// IIFE immediately invoke function execution
+// (function(val=100){
+//     console.log("Zohaib",val);
+// })();
+
+function product(...rest) {
+    console.log(arguments);
+}
+
+product(10,20,30,40,50,60);
