@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto">
+          <form onsubmit="onSubmitForm(event)">
+            <div class="form-group">
+              <label for="">Name</label>
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                onblur="onUserBLurtheForm(event)"
+                oninput="onUserInput(event)"
+              />
+              <div id="nameErr" class="text-danger"></div>
+            </div>
+            <div class="form-group">
+              <label for="">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                oninput="validateEmail(event)"
+                onblur="onEmailBlur(event)"
+                class="form-control"
+              />
+              <div id="emailErr" class="text-danger p-2"></div>
+            </div>
+            <div class="form-group mt-2">
+              <label for="">Password</label>
+              <input
+                type="password"
+                placeholder="Enter password....."
+                class="form-control"
+                id="password"
+                name="password"
+                oninput="onInputPassword(event)"
+                onblur="onBlurPassword(event)"
+              />
+              <div id="passwordErr" class="text-danger p-2"></div>
+            </div>
+            <div class="form-group mt-2">
+              <label for="">Confirm Password</label>
+              <input
+                type="password"
+                name="confirmpassword"
+                placeholder="Enter password....."
+                class="form-control"
+                onblur="onBlurConfirmPassword(event)"
+                oninput="onInputConfirmPassword(event)"
+              />
+              <div id="confirmPasswordErr" class="text-danger p-2"></div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
