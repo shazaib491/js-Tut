@@ -1,0 +1,106 @@
+// const calculationModule = require("./sum");
+
+// console.log(calculationModule.sum(10, 20));
+
+// calculationModule.product(30, 40);
+
+// const sum = require("./sum");
+
+// console.log(sum(10, 20));
+
+const http = require("http");
+const url = require("url");
+
+// // create a http server using nodejs
+const server = http.createServer(serverListener);
+
+function serverListener(request, response) {
+  //   //   response.writeHead(200, { "Content-Type": "text/html" });
+  //   //   response.end(`<h1>Hello world</h1>`);
+  let query = url.parse(request.url, true);
+  let address = query.pathname.slice(1);
+  console.log(address);
+  switch (address) {
+    case "home":
+      //   response.writeHead(200, { "Content-Type": "text/html" });
+      //   response.write("home works");
+      //   response.end();
+      fileReaderFromComputer("index.json", request, response);
+      break;
+    case "save":
+      //   response.writeHead(200, { "Content-Type": "text/html" });
+      //   response.write("about works");
+      //   response.end();
+      writeFile("index.txt", "<h1>About works</h1>", request, response);
+      break;
+    case "delete":
+      //   deleteFile("index.txt");
+      break;
+    case "renameFile":
+      renameFile("index.html", "about.html");
+      break;
+  }
+}
+server.listen(3000, () => {
+  console.log("listening on port 3000");
+});
+
+const fs = require("fs");
+
+// fs.readFile("index.html", "utf8", function (err, data) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(data);
+//   }
+// });
+
+function fileReaderFromComputer(filename, req, res) {
+  fs.readFile(filename, function (err, data) {
+    if (err) {
+      console.log(err);
+    } else {
+      res.writeHead(200, { "Content-Type": "application/json" });
+      res.write(data);
+      res.end();
+    }
+  });
+}
+
+// function writeFile(filename, data, req, res) {
+//   fs.appendFile(filename, data, function (err, data) {
+//     if (err) {
+//       console.log(err);
+//     } else {
+//       res.writeHead(200, { "Content-Type": "text/html" });
+//       res.write("saved");
+//       res.end();
+//     }
+//   });
+// }
+
+// function deleteFile(filename) {
+//   fs.unlink(filename, function (err) {
+//     if (err) throw err;
+//     console.log("File deleted!");
+//   });
+// }
+
+function renameFile(filename, newFilename) {
+  fs.rename(filename, newFilename, function (err, data) {
+    if (err) throw err;
+    console.log("file renamed");
+  });
+}
+
+function writeFile(filename, data, req, res) {
+  fs.writeFile(filename, data, function (err, data) {
+    if (err) {
+      console.log(err);
+    } else {
+      res.writeHead(200, { "Content-Type": "text/html" });
+      res.write("saved");
+      res.end();
+    }
+  });
+}
