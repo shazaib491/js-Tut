@@ -1,5 +1,3 @@
-Sure! Let's break down the structure of the entities you provided into individual tables and generate the SQL queries to create them, along with an explanation in table format for each entity.
-
 We have the following entities:
 
 1. **IdType**
@@ -8,9 +6,7 @@ We have the following entities:
 4. **Sponsorship**
 5. **UserEntity**
 
-Each table will have its own SQL creation query, and I'll also explain the relationships between them in a table format. Let's go through them step-by-step.
 
----
 
 ### **1. `IdType` Table**
 This table stores the ID types available in the system.
