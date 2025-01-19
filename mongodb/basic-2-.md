@@ -1,6 +1,8 @@
 ### **MongoDB Basics (Theory in Hinglish)**
 
-MongoDB ek **NoSQL, document-oriented database** hai jo high performance, scalability, aur flexibility ke liye design kiya gaya hai. Relational databases (SQL) ke unlike, MongoDB tables aur rows par depend nahi karta. Yeh **collections aur documents** ka use karta hai.
+MongoDB ek NoSQL, document-oriented database hai jo large-scale applications aur dynamic data ko efficiently handle karne ke liye design kiya gaya hai. Yeh ek modern database hai jo traditional relational databases (SQL) ki limitations ko address karta hai.
+
+Relational databases (SQL) ke tables aur rows ke model ke jagah MongoDB collections aur documents ka use karta hai. Yeh flexible aur high-performance solution deta hai jo real-world applications ke liye perfect hai.
 
 ---
 
