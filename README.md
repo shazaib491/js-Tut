@@ -1,5 +1,5 @@
 
-# Introduction to JavaScript and Its History
+# Introduction to Programming  Language & JavaScript and Its History 
 
 ## Programming Language kya hoti hai?
 
