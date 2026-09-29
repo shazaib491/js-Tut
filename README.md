@@ -3,7 +3,13 @@
 
 ## What is JavaScript?
 
-JavaScript is a dynamic programming language that is used to create interactive effects within web browsers. It is a core technology of the World Wide Web, alongside HTML and CSS.
+JavaScript ek programming language hai jiska use website ko chalane aur kaam karne layak banane ke liye kiya jata hai.
+
+HTML se hum website ka structure banate hain, jaise heading, paragraph, button aur image. CSS se hum website ko design karte hain, jaise color, size aur layout. JavaScript se hum website mein kaam karne wali cheezein add karte hain.
+
+Jaise agar hum button par click karein aur kuch ho, form mein galat information dene par message aaye, menu open ho, image change ho, ya page par information bina dobara load kiye change ho — ye sab JavaScript se kiya ja sakta hai.
+
+JavaScript ka use sirf website ke front-end mein nahi hota. Node.js ki help se JavaScript ko back-end mein bhi use kar sakte hain. Isse hum server, API aur database ke saath kaam kar sakte hain.
 
 ## History of JavaScript
 
