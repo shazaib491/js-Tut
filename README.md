@@ -7,6 +7,18 @@ Programming language ek aisi language hoti hai jiske through hum computer ko ins
 
 Jaise hum insaan se Hindi ya English mein baat karke usse koi kaam karne ko bolte hain, waise hi computer ko kaam samjhane ke liye programming language ka use karte hain.
 
+### 1. High-Level Language
+
+High-level language woh language hoti hai jo **insaan ke liye samajhna aur likhna easy** hoti hai. Isme hume computer ke hardware ki complicated details nahi samajhni padti. Hum simple words aur syntax ka use karke computer ko instructions de sakte hain. **JavaScript, Python aur Java** high-level languages ke examples hain.
+
+### 2. Low-Level Language
+
+Low-level language computer ke **hardware ke bahut close** hoti hai. Isme instructions computer ke processor ke according hoti hain, isliye humans ke liye ise samajhna difficult hota hai. **Machine language aur Assembly language** low-level languages ke examples hain. Isme programmer ko computer ke hardware ke baare mein zyada knowledge honi chahiye.
+
+### 3. Mid-Level Language
+
+Mid-level language mein **high-level aur low-level dono ki qualities** hoti hain. Ye insaan ke liye relatively easy hoti hai, aur saath hi programmer ko hardware par bhi kuch control deti hai. **C language** ko commonly mid-level language ka example maana jata hai. Simple words mein, **mid-level language human-friendly bhi hoti hai aur hardware ke saath bhi kaam kar sakti hai.**
+
 ## What is JavaScript?
 
 JavaScript ek programming language hai jiska use website ko chalane aur kaam karne layak banane ke liye kiya jata hai.
