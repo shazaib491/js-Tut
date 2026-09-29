@@ -1,6 +1,12 @@
 
 # Introduction to JavaScript and Its History
 
+## Programming Language kya hoti hai?
+
+Programming language ek aisi language hoti hai jiske through hum computer ko instructions dete hain ki usse kya kaam karna hai.
+
+Jaise hum insaan se Hindi ya English mein baat karke usse koi kaam karne ko bolte hain, waise hi computer ko kaam samjhane ke liye programming language ka use karte hain.
+
 ## What is JavaScript?
 
 JavaScript ek programming language hai jiska use website ko chalane aur kaam karne layak banane ke liye kiya jata hai.
