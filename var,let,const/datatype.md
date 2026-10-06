@@ -1,25 +1,28 @@
-JavaScript Data Types — Detailed Explanation in Hinglish
+# JavaScript Data Types — Detailed Explanation in Hinglish
 
-JavaScript mein Data Type batata hai ki kisi variable ke andar kis type ki value store hai.
+JavaScript mein **Data Type** batata hai ki kisi variable ke andar kis type ki value store hai.
 
-Example:
+## Example
 
+```javascript
 let name = "Shazaib";
 let age = 25;
 let isStudent = true;
+```
 
 Yahan:
 
-* name → String
-* age → Number
-* isStudent → Boolean
+- `name` → **String**
+- `age` → **Number**
+- `isStudent` → **Boolean**
 
-⸻
+---
 
-1. JavaScript Data Types ke Main Categories
+# 1. JavaScript Data Types ke Main Categories
 
-JavaScript mein data types ko mainly 2 categories mein divide kiya jata hai:
+JavaScript mein data types ko mainly **2 categories** mein divide kiya jata hai:
 
+```text
 Data Types
 │
 ├── Primitive Data Types
@@ -33,423 +36,587 @@ Data Types
 │
 └── Non-Primitive / Reference Data Type
     └── Object
+```
 
-Primitive vs Non-Primitive
+## Primitive vs Non-Primitive
 
-Primitive	Non-Primitive
-Single value represent karta hai	Multiple/complex data represent kar sakta hai
-Immutable hote hain	Generally mutable hote hain
-Direct value concept	Reference concept
-String, Number, Boolean etc.	Object, Array, Function etc.
+| Primitive | Non-Primitive |
+|---|---|
+| Single value represent karta hai | Multiple/complex data represent kar sakta hai |
+| Immutable hote hain | Generally mutable hote hain |
+| Value-based concept | Reference-based concept |
+| String, Number, Boolean etc. | Object, Array, Function etc. |
 
-⸻
+---
 
-2. String
+# 2. String
 
-String ka use text store karne ke liye hota hai.
+**String** ka use text store karne ke liye hota hai.
 
 String ko:
 
-* " " double quotes
-* ' ' single quotes
-* ` ` backticks
+- Double quotes `" "`
+- Single quotes `' '`
+- Backticks `` ` ` ``
 
 mein likh sakte hain.
 
+## Example
+
+```javascript
 let name = "Shazaib";
 let city = 'Bhopal';
 let message = `Hello World`;
+```
 
-Example
+### Another Example
 
+```javascript
 let firstName = "Shazaib";
 let lastName = "Rahman";
+
 console.log(firstName);
 console.log(lastName);
+```
 
-Output:
+### Output
 
+```text
 Shazaib
 Rahman
+```
 
-String ki type check karna
+## String ki Type Check Karna
 
+```javascript
 let name = "Shazaib";
+
 console.log(typeof name);
+```
 
-Output:
+### Output
 
+```text
 string
+```
 
-Important
+## Important
 
-Number ko quotes mein likh diya to woh String ban jayega.
+Agar number ko quotes ke andar likh diya, to woh **String** ban jayega.
 
+```javascript
 let age = 25;      // Number
 let age2 = "25";   // String
+
 console.log(typeof age);
 console.log(typeof age2);
+```
 
-Output:
+### Output
 
+```text
 number
 string
+```
 
-⸻
+---
 
-3. Number
+# 3. Number
 
-JavaScript mein Number integers aur decimal numbers dono ko represent karta hai.
+JavaScript mein **Number** integers aur decimal numbers dono ko represent karta hai.
 
+```javascript
 let age = 25;
 let marks = 85.5;
 let temperature = -10;
+```
 
-Sabka type:
+Teeno ka type `number` hoga.
 
+```javascript
 console.log(typeof age);
 console.log(typeof marks);
 console.log(typeof temperature);
+```
 
-Output:
+### Output
 
+```text
 number
 number
 number
+```
 
-Integer
+## Integer
 
+```javascript
 let age = 25;
+```
 
-Decimal
+## Decimal
 
+```javascript
 let price = 99.99;
+```
 
-Negative Number
+## Negative Number
 
+```javascript
 let balance = -500;
+```
 
-Mathematical Operations
+## Mathematical Operations
 
+```javascript
 let a = 10;
 let b = 5;
+
 console.log(a + b); // 15
 console.log(a - b); // 5
 console.log(a * b); // 50
 console.log(a / b); // 2
+```
 
-⸻
+---
 
-4. BigInt
+# 4. BigInt
 
-BigInt ka use bahut bade integers ko store karne ke liye hota hai.
+**BigInt** ka use bahut bade integers ko store karne ke liye hota hai.
 
-Normal JavaScript Number ki safe integer limit hoti hai.
+JavaScript ke normal `Number` ki safe integer limit hoti hai.
 
-BigInt banane ke liye number ke end mein n lagate hain:
+BigInt banane ke liye number ke end mein **`n`** lagate hain.
 
+```javascript
 let bigNumber = 123456789012345678901234567890n;
+
 console.log(bigNumber);
+```
 
-Type:
+## Type Check Karna
 
+```javascript
 console.log(typeof bigNumber);
+```
 
-Output:
+### Output
 
+```text
 bigint
+```
 
-Example
+## Example
 
+```javascript
 let population = 12345678901234567890n;
+
 console.log(population);
+```
 
-Important
+## Important
 
-BigInt aur Number ko directly mix nahi kar sakte:
+`BigInt` aur `Number` ko directly mix nahi kar sakte.
 
+```javascript
 let a = 10n;
 let b = 5;
-console.log(a + b); // Error
 
-Agar dono ko calculate karna hai to same type mein convert karna padega.
+console.log(a + b);
+```
 
-⸻
+Ye **Error** dega.
 
-5. Boolean
+Agar dono ko calculate karna hai, to same type mein convert karna padega.
 
-Boolean ke andar sirf do values hoti hain:
+---
 
+# 5. Boolean
+
+Boolean ke andar sirf **do values** hoti hain:
+
+```text
 true
 false
+```
 
-Boolean ka use mostly conditions mein hota hai.
+Boolean ka use mostly **conditions** mein hota hai.
 
+```javascript
 let isLoggedIn = true;
 let isAdmin = false;
+```
 
-Example:
+## Example
 
+```javascript
 let age = 20;
+
 console.log(age >= 18);
+```
 
-Output:
+### Output
 
+```text
 true
+```
 
-Another example:
+### Another Example
 
+```javascript
 let isRaining = false;
+
 console.log(isRaining);
+```
 
-Output:
+### Output
 
+```text
 false
+```
 
-Real-life example
+## Real-Life Example
 
+```javascript
 let hasTicket = true;
+
 if (hasTicket) {
     console.log("You can enter.");
 }
+```
 
-⸻
+---
 
-6. Undefined
+# 6. Undefined
 
-undefined ka matlab hai:
+`undefined` ka matlab hai:
 
-Variable declare hua hai, lekin uske andar abhi koi value assign nahi hui.
+> Variable declare hua hai, lekin uske andar abhi koi value assign nahi hui.
 
-Example:
+## Example
 
+```javascript
 let name;
+
 console.log(name);
+```
 
-Output:
+### Output
 
+```text
 undefined
+```
 
-Type:
+## Type Check Karna
 
+```javascript
 console.log(typeof name);
+```
 
-Output:
+### Output
 
+```text
 undefined
+```
 
-Example
+### Another Example
 
+```javascript
 let age;
+
 console.log(age);
+```
 
-Yahan age exist karta hai, lekin uski value assign nahi hui.
+Yahan `age` variable exist karta hai, lekin uski value assign nahi hui.
 
-⸻
+---
 
-7. Null
+# 7. Null
 
-null ka matlab hota hai:
+`null` ka matlab hota hai:
 
-Intentionally koi value nahi hai.
+> Intentionally koi value nahi hai.
 
-Example:
+## Example
 
+```javascript
 let user = null;
 
-Yahan hum intentionally bata rahe hain ki user ki currently koi value nahi hai.
-
 console.log(user);
+```
 
-Output:
+### Output
 
+```text
 null
+```
 
-undefined vs null
+Yahan hum intentionally bata rahe hain ki `user` ki currently koi value nahi hai.
 
+## Undefined vs Null
+
+```javascript
 let a;
 let b = null;
+```
 
 Difference:
 
+```text
 a → undefined
 b → null
+```
 
 Simple language mein:
 
-* undefined → value assign nahi hui
-* null → intentionally empty value di gayi
+- `undefined` → value assign nahi hui
+- `null` → intentionally empty value di gayi
 
-Interesting JavaScript behavior
+## Interesting JavaScript Behavior
 
+```javascript
 console.log(typeof null);
+```
 
-Output:
+### Output
 
+```text
 object
+```
 
-Ye JavaScript ka historical/legacy behavior hai.
+Ye JavaScript ka **historical/legacy behavior** hai.
 
-Technically null primitive value hai, lekin:
+Technically `null` ek **primitive value** hai, lekin:
 
+```javascript
 typeof null
+```
 
-"object" return karta hai.
+`"object"` return karta hai.
 
-⸻
+---
 
-8. Symbol
+# 8. Symbol
 
-Symbol JavaScript ka ek special primitive data type hai.
+`Symbol` JavaScript ka ek special **primitive data type** hai.
 
-Iska use mostly unique identifiers/keys create karne ke liye hota hai.
+Iska use mostly **unique identifiers/keys** create karne ke liye hota hai.
 
+## Example
+
+```javascript
 let id = Symbol("id");
+
 console.log(id);
+```
 
-Type:
+## Type Check Karna
 
+```javascript
 console.log(typeof id);
+```
 
-Output:
+### Output
 
+```text
 symbol
+```
 
-Symbols unique hote hain
+## Symbols Unique Hote Hain
 
+```javascript
 let a = Symbol("id");
 let b = Symbol("id");
+
 console.log(a === b);
+```
 
-Output:
+### Output
 
+```text
 false
+```
 
-Although dono ka description "id" hai, dono symbols different hain.
+Although dono ka description `"id"` hai, dono symbols alag hain.
 
+```javascript
 Symbol("id") !== Symbol("id")
+```
 
-⸻
+---
 
-9. Object
+# 9. Object
 
-Object ek non-primitive/reference data type hai.
+**Object** ek non-primitive/reference data type hai.
 
 Object ka use related data ko ek jagah store karne ke liye hota hai.
 
-Example:
+## Example
 
+```javascript
 let student = {
     name: "Shazaib",
     age: 25,
     marks: 85
 };
+```
 
-Yahan ek student ki multiple information ek object mein hai.
+Yahan ek student ki multiple information ek object mein store hai.
 
-Access kar sakte hain:
+## Object ki Properties Access Karna
 
+```javascript
 console.log(student.name);
 console.log(student.age);
 console.log(student.marks);
+```
 
-Output:
+### Output
 
+```text
 Shazaib
 25
 85
+```
 
-Object ki type
+## Object ki Type
 
+```javascript
 console.log(typeof student);
+```
 
-Output:
+### Output
 
+```text
 object
+```
 
-⸻
+---
 
-10. Array
+# 10. Array
 
-Array technically JavaScript mein object ka special type hai.
+Array technically JavaScript mein **Object ka special type** hai.
 
 Array ka use multiple values store karne ke liye hota hai.
 
+## Example
+
+```javascript
 let fruits = ["Apple", "Banana", "Mango"];
+```
 
-Index 0 se start hota hai:
+Array ka index **0 se start** hota hai.
 
+```javascript
 console.log(fruits[0]);
+```
 
-Output:
+### Output
 
+```text
 Apple
+```
+
+```javascript
 console.log(fruits[1]);
+```
 
-Output:
+### Output
 
+```text
 Banana
+```
 
-Array ki type
+## Array ki Type
 
+```javascript
 console.log(typeof fruits);
+```
 
-Output:
+### Output
 
+```text
 object
+```
 
-Important:
+### Important
 
+```javascript
 typeof []
+```
 
 returns:
 
+```text
 object
+```
 
 Array check karne ke liye:
 
+```javascript
 Array.isArray(fruits);
+```
 
-Output:
+### Output
 
+```text
 true
+```
 
-⸻
+---
 
-11. Function
+# 11. Function
 
-Function ko bhi JavaScript mein technically object maana jata hai, lekin typeof karne par special result milta hai:
+Function ko JavaScript mein technically **object** maana jata hai, lekin `typeof` karne par special result milta hai.
 
+## Example
+
+```javascript
 function greet() {
     console.log("Hello");
 }
+
 console.log(typeof greet);
+```
 
-Output:
+### Output
 
+```text
 function
+```
 
-Function ka use reusable code banane ke liye hota hai.
+Function ka use **reusable code** banane ke liye hota hai.
 
+## Example
+
+```javascript
 function add(a, b) {
     return a + b;
 }
+
 console.log(add(10, 20));
+```
 
-Output:
+### Output
 
+```text
 30
+```
 
-⸻
+---
 
-12. typeof Operator
+# 12. `typeof` Operator
 
-JavaScript mein kisi value ka data type check karne ke liye typeof use karte hain.
+JavaScript mein kisi value ka **data type check** karne ke liye `typeof` operator use karte hain.
 
+## Syntax
+
+```javascript
 typeof value
+```
 
-Examples:
+## Examples
 
+```javascript
 console.log(typeof "Hello");
 console.log(typeof 25);
 console.log(typeof true);
@@ -457,9 +624,11 @@ console.log(typeof undefined);
 console.log(typeof null);
 console.log(typeof 123n);
 console.log(typeof Symbol("id"));
+```
 
-Output:
+### Output
 
+```text
 string
 number
 boolean
@@ -467,11 +636,15 @@ undefined
 object
 bigint
 symbol
+```
 
-⸻
+> **Note:** `typeof null` ka result `"object"` hota hai, jo JavaScript ka historical/legacy behavior hai.
 
-13. Complete Data Type Example
+---
 
+# 13. Complete Data Type Example
+
+```javascript
 let name = "Shazaib";
 let age = 25;
 let isStudent = true;
@@ -479,17 +652,22 @@ let salary;
 let data = null;
 let bigNumber = 12345678901234567890n;
 let id = Symbol("id");
+
 let person = {
     name: "Shazaib",
     age: 25
 };
+
 let subjects = ["JavaScript", "HTML", "CSS"];
+
 function greet() {
     console.log("Hello");
 }
+```
 
-Types:
+## Types Check Karna
 
+```javascript
 console.log(typeof name);       // string
 console.log(typeof age);        // number
 console.log(typeof isStudent);  // boolean
@@ -500,108 +678,174 @@ console.log(typeof id);         // symbol
 console.log(typeof person);     // object
 console.log(typeof subjects);   // object
 console.log(typeof greet);      // function
+```
 
-⸻
+---
 
-14. Primitive Data Types
+# 14. Primitive Data Types
 
-JavaScript ke 7 primitive data types hain:
+JavaScript ke **7 primitive data types** hain:
 
-Data Type	Example
-String	"Hello"
-Number	100
-BigInt	100n
-Boolean	true
-Undefined	undefined
-Null	null
-Symbol	Symbol("id")
+| Data Type | Example |
+|---|---|
+| String | `"Hello"` |
+| Number | `100` |
+| BigInt | `100n` |
+| Boolean | `true` |
+| Undefined | `undefined` |
+| Null | `null` |
+| Symbol | `Symbol("id")` |
 
-⸻
+### Primitive Data Types
 
-15. Non-Primitive / Reference Types
+```text
+Primitive
+│
+├── String
+├── Number
+├── BigInt
+├── Boolean
+├── Undefined
+├── Null
+└── Symbol
+```
 
-Common non-primitive types:
+---
 
-Object
-Array
-Function
-Date
-Map
-Set
+# 15. Non-Primitive / Reference Types
 
-Example:
+Common non-primitive/reference types:
 
+- Object
+- Array
+- Function
+- Date
+- Map
+- Set
+
+## Examples
+
+### Object
+
+```javascript
 let person = {
     name: "Ali"
 };
+```
+
+### Array
+
+```javascript
 let numbers = [10, 20, 30];
+```
+
+### Function
+
+```javascript
 function greet() {
     console.log("Hello");
 }
+```
 
-⸻
+---
 
-16. Primitive vs Reference — Important Concept
+# 16. Primitive vs Reference — Important Concept
 
-Ye JavaScript mein bahut important concept hai.
+Ye JavaScript ka bahut important concept hai.
 
-Primitive
+## Primitive Example
 
+```javascript
 let a = 10;
+
 let b = a;
+
 b = 20;
+
 console.log(a);
 console.log(b);
+```
 
-Output:
+### Output
 
+```text
 10
 20
+```
 
-a ki value change nahi hui.
-
-Concept:
-
-a → 10
-b → 10
-b → 20
-
-Dono independent values hain.
-
-⸻
-
-Reference Example
-
-let person1 = {
-    name: "Ali"
-};
-let person2 = person1;
-person2.name = "Ahmed";
-console.log(person1.name);
-
-Output:
-
-Ahmed
-
-Kyun?
-
-Kyuki object ke case mein variable ke paas object ka reference hota hai.
+Yahan `a` ki value change nahi hui.
 
 Conceptually:
 
+```text
+a → 10
+
+b → 10
+
+b = 20
+
+a → 10
+b → 20
+```
+
+Dono **independent values** hain.
+
+---
+
+# 17. Reference Example
+
+Ab object ka example dekho:
+
+```javascript
+let person1 = {
+    name: "Ali"
+};
+
+let person2 = person1;
+
+person2.name = "Ahmed";
+
+console.log(person1.name);
+```
+
+### Output
+
+```text
+Ahmed
+```
+
+## Kyun?
+
+Kyuki object ke case mein variables same object ko **refer** kar sakte hain.
+
+Conceptually:
+
+```text
 person1 ──┐
           ↓
        Object
        name: "Ali"
           ↑
 person2 ──┘
+```
 
-person1 aur person2 same object ko refer kar rahe hain.
+`person1` aur `person2` same object ko refer kar rahe hain.
 
-⸻
+Isliye:
 
-17. Quick Revision
+```javascript
+person2.name = "Ahmed";
+```
 
+karne par `person1.name` bhi `"Ahmed"` ho jata hai.
+
+---
+
+# 18. Quick Revision
+
+## Primitive
+
+```text
 Primitive
 │
 ├── String       → "Hello"
@@ -611,6 +855,11 @@ Primitive
 ├── Undefined    → undefined
 ├── Null         → null
 └── Symbol       → Symbol("id")
+```
+
+## Non-Primitive
+
+```text
 Non-Primitive
 │
 └── Object
@@ -620,21 +869,100 @@ Non-Primitive
     ├── Date
     ├── Map
     └── Set
+```
 
-Ek line mein yaad rakho:
+---
 
-Primitive = simple/single value
-Reference = object/complex data ko refer karta hai.
+# 19. One-Line Revision
 
-Most important typeof examples
+| Type | Simple Meaning |
+|---|---|
+| String | Text store karta hai |
+| Number | Numbers store karta hai |
+| BigInt | Very large integers store karta hai |
+| Boolean | `true` / `false` |
+| Undefined | Value assign nahi hui |
+| Null | Intentionally empty value |
+| Symbol | Unique identifier |
+| Object | Complex/related data |
+| Array | Multiple values ka collection |
+| Function | Reusable block of code |
 
+### Ek Line Mein Yaad Rakho
+
+> **Primitive = simple/single value**
+
+> **Reference = object/complex data ko refer karta hai**
+
+---
+
+# 20. Most Important `typeof` Examples
+
+```javascript
 typeof "Hello"       // "string"
+
 typeof 100           // "number"
+
 typeof 100n          // "bigint"
+
 typeof true          // "boolean"
+
 typeof undefined     // "undefined"
+
 typeof null          // "object"  ← JavaScript legacy behavior
+
 typeof Symbol("id")  // "symbol"
+
 typeof {}            // "object"
+
 typeof []            // "object"
+
 typeof function(){}  // "function"
+```
+
+---
+
+# Final Summary
+
+JavaScript mein **7 primitive data types** hote hain:
+
+```text
+String
+Number
+BigInt
+Boolean
+Undefined
+Null
+Symbol
+```
+
+Aur complex/reference data ke liye commonly:
+
+```text
+Object
+Array
+Function
+Date
+Map
+Set
+```
+
+Sabse important baat:
+
+```text
+Primitive
+    ↓
+Value-based
+
+Reference
+    ↓
+Object/reference-based
+```
+
+Aur data type check karne ke liye:
+
+```javascript
+typeof value
+```
+
+use kiya jata hai.
