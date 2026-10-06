@@ -1,4 +1,4 @@
-# JavaScript Data Types — Detailed Explanation in Hinglish
+# JavaScript Data Types — Detailed Explanation 
 
 JavaScript mein **Data Type** batata hai ki kisi variable ke andar kis type ki value store hai.
 
