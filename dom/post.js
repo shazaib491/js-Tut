@@ -1,5 +1,7 @@
 let posts = [];
 let postList = document.querySelector("#postList");
+let postTitleInput = document.querySelector("#title");
+let postBodyInput = document.querySelector("#body");
 
 function onFormSubmit(event) {
   event.preventDefault();
@@ -26,15 +28,29 @@ function showPosts() {
     li.textContent = element.title + " " + element.body;
     li.setAttribute("class", 'list-group-item"');
 
-    let button = document.createElement("button");
-    button.textContent = "Delete";
-    button.setAttribute("class","btn btn-primary")
+    // update button 
+    let updateButton = document.createElement("button");
+    updateButton.textContent = "Update";
+    updateButton.setAttribute("class","btn btn-primary")
     // adding dynamic eventlistner from javcript side
-    button.addEventListener("click", () => {
-      li.remove();
+    updateButton.addEventListener("click", () => {
+      // li.remove();
+      findPostById(element.id);
     });
 
-    li.appendChild(button);
+    li.appendChild(updateButton);
+
+    //delete button
+    let deletebutton = document.createElement("button");
+    deletebutton.textContent = "Delete";
+    deletebutton.setAttribute("class","btn btn-primary")
+    // adding dynamic eventlistner from javcript side
+    deletebutton.addEventListener("click", () => {
+      // li.remove();
+      deletePost(element.id);
+    });
+
+    li.appendChild(deletebutton);
 
     postList.appendChild(li);
   });
@@ -47,3 +63,9 @@ function deletePost(id) {
 }
 
 showPosts();
+function findPostById(id){
+  let result = posts.find(post=>post.id==id);
+  postTitleInput.value = result.title;
+  postBodyInput.value = result.body;
+  console.log(result);
+}
