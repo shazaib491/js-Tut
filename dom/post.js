@@ -2,70 +2,79 @@ let posts = [];
 let postList = document.querySelector("#postList");
 let postTitleInput = document.querySelector("#title");
 let postBodyInput = document.querySelector("#body");
+let mode = "save";
+let postId;
 
 function onFormSubmit(event) {
-  event.preventDefault();
+  event.preventDefault(); //refresh hone se rokh doge
+  if (mode == "update") {
+    updatePost();
+  } else {
+    insertPost();
+  }
+  event.target.reset();
+  showPosts();
+}
+
+function insertPost() {
   posts.push({
     id: posts.length + 1,
     title: event.target.title.value,
     body: event.target.body.value,
   });
-  console.log(posts);
-  event.target.reset();
-  showPosts();
+}
+function updatePost() {
+  let updatePost = posts.find((post) => post.id === postId);
+  updatePost.title = event.target.title.value;
+  updatePost.body = event.target.body.value;
+  mode = "save";
 }
 
 function showPosts() {
-  console.log("postlist before clear", postList.innerText);
-  // ul > li array has one record
   postList.innerHTML = ""; //empty
-  console.log("postlist afer clear", postList.innerText);
-
   posts.forEach((element) => {
-    //[1]
-
     let li = document.createElement("li");
     li.textContent = element.title + " " + element.body;
     li.setAttribute("class", 'list-group-item"');
-
-    // update button 
-    let updateButton = document.createElement("button");
-    updateButton.textContent = "Update";
-    updateButton.setAttribute("class","btn btn-primary")
-    // adding dynamic eventlistner from javcript side
-    updateButton.addEventListener("click", () => {
-      // li.remove();
-      findPostById(element.id);
-    });
-
-    li.appendChild(updateButton);
-
-    //delete button
-    let deletebutton = document.createElement("button");
-    deletebutton.textContent = "Delete";
-    deletebutton.setAttribute("class","btn btn-primary")
-    // adding dynamic eventlistner from javcript side
-    deletebutton.addEventListener("click", () => {
-      // li.remove();
-      deletePost(element.id);
-    });
-
-    li.appendChild(deletebutton);
-
+    li.appendChild(addUpdateButton());
+    li.appendChild(addDeleteButton());
     postList.appendChild(li);
   });
-  console.log("postlist afer insert", postList.innerText);
 }
 
+function addUpdateButton() {
+  let updateButton = document.createElement("button");
+  updateButton.textContent = "Update";
+  updateButton.setAttribute("class", "btn btn-primary");
+  // adding dynamic eventlistner from javcript side
+  updateButton.addEventListener("click", () => {
+    findPostById(element.id);
+  });
+  return updateButton;
+}
+
+function addDeleteButton() {
+  //delete button
+  let deletebutton = document.createElement("button");
+  deletebutton.textContent = "Delete";
+  deletebutton.setAttribute("class", "btn btn-primary");
+  // adding dynamic eventlistner from javcript side
+  deletebutton.addEventListener("click", () => {
+    // li.remove();
+    deletePost(element.id);
+  });
+  return deletebutton;
+}
 function deletePost(id) {
   posts = posts.filter((post) => post.id !== id);
   showPosts();
 }
 
 showPosts();
-function findPostById(id){
-  let result = posts.find(post=>post.id==id);
+function findPostById(id) {
+  let result = posts.find((post) => post.id == id);
   postTitleInput.value = result.title;
   postBodyInput.value = result.body;
-  console.log(result);
+  postId = result.id;
+  mode = "update";
 }
